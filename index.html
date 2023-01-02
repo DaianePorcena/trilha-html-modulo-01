@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTML - Módulo I</title>
+</head>
+<body>
+
+    <h1>Módulo 1 - Primeiros passos com HTML</h1>
+    <hr>
+
+    <h2 id="indice">Índice</h2>
+    
+    <ul>
+        <li><a href="#historia">História da Web</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Estrutura básica de um HTML</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+    <h2 id="#historia">História da Web</h2>
+
+    <a href="#indice"><small>(Voltar)</small></a>
+
+    <p>
+        Não dá para falar da <strong><u>História da Web</u></strong>  sem antes falar do surgimento dos primeiros computadores. A história da computação é marcada por varias gerações de computadores:
+    </p>
+    <p>
+        Um dos primeiros computdores que surgiu foi o <strong>Mark I (1944)</strong>, criado para realizar calculos complexos em pouco espaço de tempo. Em 1946 surge o <strong>Colossus</strong>, criado para criptoanálises na Alemanha. O colossus foi amplamente utilizado na 2ª Guerra Mundial. Em 1946, já na <i>primeira geração</i> da história da computação surge o <strong>ENIAC</strong>, primeiro computador automático criado nos Estados Unidos e também foi utilizado na 2ª guerra.
+    </p>
+    <p>
+        Os computadores da <i>segunda geração</i> tinham como características o uso de transistores, substituindo assim, o uso de válvulas da primeira geração, diminuindo bastante o tamanho desses computadores.
+    </p>
+    <p>
+        A <i>terceira geração</i> surgiu com a evolução dos cirtcuitos integrados. Os transistores passaram a serem substituídos e o tamanhos dos computadores diminuiram ainda mais.
+    </p>
+    <p>
+        A <i>quarta geração</i> começa em 1971 com os computadores pessoais, sugimento do mouse e vai até os dias atuais. Há quem diga que já estamos vivendo a era da 5ª geração de computadores, devido ao surgimento de computadores quânticos, IAS, criptomoedas, metaverso, etc.
+    </p>
+    <p>
+        Já a história da internet começa por volda da década de 50 com a Guerra Fria. Época que alavancou o surgimento de novas tecnologias e do <strong>Eniac</strong> para realizar cálculos complexos. Nesse mesmo período foi criada a ARPA(Advanced Research Projects Agency) que depois se transformou na DARPA. Foi nesse momento em que surge o protótipo da primeira rede de internet, a <a href="https://www.ime.usp.br/~is/abc/abc/node20.html">Arpanet</a>. Durante meados de 1989, <a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a>, desenvolveu a World Wide Web (www), a Rede Mundial de Computadores que conhecemos hoje.
+    </p>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+
+    <a href="#indice"><small>(Voltar)</small></a>
+
+    <p>
+        Os <i>clients</i> são dispositivos responsáveis por consumir informações de um determinado lugar. Esses dispositivos podem ser:  notebooks, desktops, celulares, tablets, etc. O <i>client</i> é quem envia a requisição <u>HTTP</u> via internet para e servidor e espera que este servidor devolva essa requisição em formato de arquivos: <strong>html</strong>, <strong>CSS</strong> e <strong>javascript.</strong>
+    </p>
+    <p>
+        A velocidade da internet e o tamanhos dos arquivos pode interfer na experiência do usuário na hora de receber essa requisição. Dessa forma, desenvolvedores frontend, devem desenvolver e implementar soluções que otimizem a experiência do usuário.
+    </p>
+
+    <h2 id="servers">O que são <i>Servers</i></h2>
+
+    <a href="#indice"><small>(Voltar)</small></a>
+
+    <p>
+        Os <i>servers</i> são servidores responsáveis pelo envio de informações aos <i>clients</i>. Podem usar internet para se comunicar com <i>client</i>, mas não depende exclusivamente dela, pois poder ser um servidor dentro de uma rede local (computador central) de uma empresa. Normalmente esses computares são mais robustos do que os demais, já que exigem muito processamento. Há vários dispositivos fazendo requisições simultâneas a ele.
+    </p>
+    <p>
+        Existem diferentes tipos de servidores, dentre eles estão:
+    </p>
+    <ul>
+        <li><strong>Proxy:</strong>Representa uma ponte entre o usuário e a internet, pois quando um usuário envia uma requisição ao navegador, essa requisição primeiro chegará o Proxy que envia e recebe essa requisição para o servido. Ele é usado para bloqueio de sites malizicosos e també pode ser um servidor de autenticação.</li>
+        <li><strong>Firewall:</strong> Este servidor pode pode fazer o memos tipo de segurança do Proxy, a diferença é que ele é voltado para o acesso externo. Todo o tráfego de dados da rede passa por ele.</li>
+        <li><strong>Web Server:</strong> Voltado para web este servidor é responsável pelo armazenamento, processamento e entrega dos aqruivos dos sites para os navegadores</li>
+        <li><strong>Database Server:</strong> É utilizado apenas para armazenar e gerenciar o banco de dados fonecendo o acesso aos usuários.</li>
+        <li><strong>DNS:</strong> Traduz endereços web em Ips númericos levando os usuaŕios aos sites corretos.</li>
+        <li><strong>Hospedagem:</strong> São servidores usados para armazenar arquivos de um determinado site deixando-os disponíveis na internet para o usuário acessar.</li>
+    </ul>
+
+    <h2 id="estrutura">Estrutura básica de um HTML</h2>
+
+    <a href="#indice"><small>(Voltar)</small></a>
+
+    <p>
+        A estrutura de uma página <u>HTML</u> começa com a tag de abertura <i>"&lt;html&gt;"</i> e a segunda tag de fechamento <i>"&lt;/html&gt;"</i>. Nem todas as tags html possuem fechamento, algumas fecham po si próprias. Dentro das tags html ficam outra duas tags, a <i>"&lt;head&gt;&lt;/head&gt;"</i> e a tag <i>"&lt;body&gt;&lt;/body&gt;"</i>.
+    </p>
+    <p>
+        A tag <i>"&lt;head&gt;&lt;/head&gt;"</i> representa o cabeçalho da página, e dentro dela ficam informações que não são visíveis para o usuário. Essas informações são formadas pelas tags: <i>"&lt;title&gt;&lt;/tile&gt;"</i> que representa o título que aparece na aba da página, <i>"&lt;link /&gt;"</i> que pode ser usada para links css, <i>"&lt;meta&gt;"</i> tag que contém metadados.
+    </p>
+    <p>
+        A tag <i>"&lt;body&gt;&lt;/body&gt;"</i> representa o corpo da página, nela contém tudo que é visível para o usuário: parágrafos, listas ordenadas e não ordenadas, imagens, ect.
+    </p>
+    <p>A imagem abaixo mostra como é a estrutura básica de uma página html:
+        <img src="estrutura-html.png" alt="" width="500px">
+    </p>
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+
+    <a href="#indice"><small>(Voltar)</small></a>
+
+    <p>
+        As <strong>lista ordenadas</strong> são usadas para indicar uma sequência ou numeração. Ela pode ser ordenada por numeros, algarismos romanos ou letras do alfabeto. Para criar uma <strong>lista ordenada</strong> usamos as tags <i>"&lt;ul&gt;&lt;/ul&gt;"</i>. Dentro dessa tag ficam os itens, representados pelas tags <i>"&lt;li&gt;&lt;/li&gt;"</i>.
+    </p>
+    <p>
+        As <strong>lista ordenadas</strong> são usadas para listar items sem se preocupar com a sequência. Para criar uma <strong>lista não ordenada</strong> usamos as tags <i>"&lt;ol&gt;&lt;/ol&gt;"</i>. Dentro dessa tag ficam os itens, representados pelas tags <i>"&lt;li&gt;&lt;/li&gt;"</i>. Para saber um pouco mais sobre listas clique <a href="https://www.w3schools.com/HTML/html_lists.asp">aqui</a>.
+    </p>
+
+    <h2 id="links">Links de referências</h2>
+
+    <a href="#indice"><small>(Voltar)</small></a>
+
+    <p>
+        Se quiser aprender um pouco mais sobre <u>HTML</u> dê uma olhada nos links abaixo:
+
+        ul
+    </p>
+    <ul>
+        <li><a href="http://dio.me" target="_blank">http://dio.me</a></li>
+        <li><a href="http://w3c.org" target="_blank">http://w3c.org</a></li>
+    </ul>
+
+</body>
+</html>
